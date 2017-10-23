@@ -67,7 +67,7 @@
 .light-modal-body {
   padding: 20px;
   overflow: auto;
-  max-height: 500px;
+  max-height: 450px;
 }
 
 .light-modal-footer {
