@@ -10,3 +10,10 @@
  IE9+, Safari, Chrome, Firefox 
  
  <em>Light Modal uses Flex and Target CSS properties.</em>
+
+
+<h3>To Do </h3>
+<em>Fell free to submit a PR </em>
+
+- [ ] JS Version
+- [ ] IE9 and/or below
