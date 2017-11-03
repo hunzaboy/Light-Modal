@@ -5,3 +5,8 @@
 <hr />
 <a href="https://hunzaboy.github.io/Light-Modal/"> Click here for a DEMO &
  How to use</a>
+ 
+ <h3>Compatibility </h3>
+ IE9+, Safari, Chrome, Firefox 
+ 
+ <em>Light Modal uses Flex and Target CSS properties.</em>
