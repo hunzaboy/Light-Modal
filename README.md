@@ -17,3 +17,6 @@
 
 - [ ] JS Version
 - [ ] IE9 and/or below
+
+<h3>Changelog</h3>
+v 1.1.0 - Added new Gallery Mode
