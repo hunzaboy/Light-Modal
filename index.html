@@ -32,6 +32,7 @@
                 <a href="#modal-id-1" class="btn">Open Simple Modal</a>
                 <a href="#modal-id-2" class="btn">Modal with Header/Footer</a>
                 <a href="#image-modal" class="btn">Open Image Modal</a>
+                <a href="#gallery-modal-1" class="btn btn-secondary">Gallery (New)</a>
             </div>
             <form>
                 <select class="input input--dropdown js--animations">
@@ -110,14 +111,16 @@
         </div>
         <footer>
             <p>Made in
-                <a href="https://www.thebrokebackpacker.com/travel-to-pakistan/" target="_blank" title="Pakistan"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="-75 -40 120 80" version="1.1">
-                    <title>Flag of Pakistan</title>
-                    <rect x="-75" y="-40" width="120" height="80" fill="#fff" />
-                    <rect x="-45" y="-40" width="90" height="80" fill="#01411C" />
-                    <circle r="24" fill="#fff" />
-                    <circle r="22" cx="-7" cy="-40" fill="#01411C" transform="rotate(-41.63354, 45, -40)" />
-                    <polygon points="0,-513674 301930,415571 -488533,-158734 488533,-158734 -301930,415571" fill="#fff" transform="rotate(-41.63354) translate(16) rotate(18) scale(0.00001557408)" />
-                </svg></a> by <a href="http://twitter.com/hunzaboy"> Aslam </a></p>
+                <a href="https://www.thebrokebackpacker.com/travel-to-pakistan/" target="_blank" title="Pakistan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="-75 -40 120 80" version="1.1">
+                        <title>Flag of Pakistan</title>
+                        <rect x="-75" y="-40" width="120" height="80" fill="#fff" />
+                        <rect x="-45" y="-40" width="90" height="80" fill="#01411C" />
+                        <circle r="24" fill="#fff" />
+                        <circle r="22" cx="-7" cy="-40" fill="#01411C" transform="rotate(-41.63354, 45, -40)" />
+                        <polygon points="0,-513674 301930,415571 -488533,-158734 488533,-158734 -301930,415571" fill="#fff" transform="rotate(-41.63354) translate(16) rotate(18) scale(0.00001557408)" />
+                    </svg>
+                </a> by <a href="http://twitter.com/hunzaboy"> Aslam </a></p>
         </footer>
     </div>
     <div class="light-modal" id="how-to-use" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
@@ -200,6 +203,92 @@
             <div class="light-modal-caption">Photo by Norbert von Niman on <a href="https://unsplash.com/@norrisniman" target="_blank">Unsplash</a></div>
         </div>
     </div>
+    <!-- gallery modal content start-->
+    <div class="light-modal" id="gallery-modal-1" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+        <div class="light-modal-content animated fadeIn">
+            <img src="https://picsum.photos/800?random" alt="from unsplash">
+            <a href="#" class="light-modal-close-icon" aria-label="close">×</a>
+            <div class="light-modal-caption">This is the Image Gallery with Fade Effect.</div>
+            <div class="light-modal-navigation">
+                <a href="#gallery-modal-4" class="light-modal-navigation navigation-prev"></a>
+                <a href="#gallery-modal-2" class="light-modal-navigation navigation-next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="light-modal" id="gallery-modal-2" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+        <div class="light-modal-content no animated flipInY">
+            <img src="https://picsum.photos/700?random" alt="from unsplash">
+            <a href="#" class="light-modal-close-icon" aria-label="close">×</a>
+            <div class="light-modal-caption">You can use any css animation on each modal like this one.</div>
+            <div class="light-modal-navigation">
+                <a href="#gallery-modal-1" class="light-modal-navigation navigation-prev"></a>
+                <a href="#gallery-modal-3" class="light-modal-navigation navigation-next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="light-modal" id="gallery-modal-3" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+        <div class="light-modal-content no animated rollIn">
+            <img src="https://picsum.photos/600?random" alt="from unsplash">
+            <a href="#" class="light-modal-close-icon" aria-label="close">×</a>
+            <div class="light-modal-caption">I mean any...</div>
+            <div class="light-modal-navigation">
+                <a href="#gallery-modal-2" class="light-modal-navigation navigation-prev"></a>
+                <a href="#gallery-modal-4" class="light-modal-navigation navigation-next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="light-modal" id="gallery-modal-4" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+        <div class="light-modal-content no animated rubberBand">
+            <div class="light-modal-header">
+                <h3 class="light-modal-heading">Gallery Markup</h3>
+                <a href="#" class="light-modal-close-icon" aria-label="close">&times;</a>
+            </div>
+            <div class="light-modal-body">
+                <p>The Markup for gallery uses the same principle as of normal modal. We are targeting a new modal on the click of the left and right arrows. <strong>You can add any css animation to individual images.</strong></p>
+                <code>
+                    <pre style="max-height: 300px;">&lt;div class=&quot;light-modal&quot; id=&quot;gallery-modal-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;light-modal-label&quot; aria-hidden=&quot;false&quot;&gt;
+        &lt;div class=&quot;light-modal-content animated fadeIn&quot;&gt;
+            &lt;img src=&quot;https://picsum.photos/800?random&quot; alt=&quot;from unsplash&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;light-modal-close-icon&quot; aria-label=&quot;close&quot;&gt;&times;&lt;/a&gt;
+            &lt;div class=&quot;light-modal-caption&quot;&gt;This is the Image Gallery with Fade Effect.&lt;/div&gt;
+            &lt;div class=&quot;light-modal-navigation&quot;&gt;
+                &lt;a href=&quot;#gallery-modal-4&quot; class=&quot;light-modal-navigation navigation-prev&quot;&gt;&lt;/a&gt;
+                &lt;a href=&quot;#gallery-modal-2&quot; class=&quot;light-modal-navigation navigation-next&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;light-modal&quot; id=&quot;gallery-modal-2&quot; role=&quot;dialog&quot; aria-labelledby=&quot;light-modal-label&quot; aria-hidden=&quot;false&quot;&gt;
+        &lt;div class=&quot;light-modal-content animated flipInY&quot;&gt;
+            &lt;img src=&quot;https://picsum.photos/700?random&quot; alt=&quot;from unsplash&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;light-modal-close-icon&quot; aria-label=&quot;close&quot;&gt;&times;&lt;/a&gt;
+            &lt;div class=&quot;light-modal-caption&quot;&gt;You can use any css animation on each modal like this one.&lt;/div&gt;
+            &lt;div class=&quot;light-modal-navigation&quot;&gt;
+                &lt;a href=&quot;#gallery-modal-1&quot; class=&quot;light-modal-navigation navigation-prev&quot;&gt;&lt;/a&gt;
+                &lt;a href=&quot;#gallery-modal-3&quot; class=&quot;light-modal-navigation navigation-next&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;light-modal&quot; id=&quot;gallery-modal-3&quot; role=&quot;dialog&quot; aria-labelledby=&quot;light-modal-label&quot; aria-hidden=&quot;false&quot;&gt;
+        &lt;div class=&quot;light-modal-content animated rollIn&quot;&gt;
+            &lt;img src=&quot;https://picsum.photos/600?random&quot; alt=&quot;from unsplash&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;light-modal-close-icon&quot; aria-label=&quot;close&quot;&gt;&times;&lt;/a&gt;
+            &lt;div class=&quot;light-modal-caption&quot;&gt;I mean any...&lt;/div&gt;
+            &lt;div class=&quot;light-modal-navigation&quot;&gt;
+                &lt;a href=&quot;#gallery-modal-2&quot; class=&quot;light-modal-navigation navigation-prev&quot;&gt;&lt;/a&gt;
+                &lt;a href=&quot;#gallery-modal-4&quot; class=&quot;light-modal-navigation navigation-next&quot;&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</pre>
+                </code>
+            </div>
+            <div class="light-modal-caption">Enjoy! </div>
+            <div class="light-modal-navigation">
+                <a href="#gallery-modal-3" class="light-modal-navigation navigation-prev"></a>
+                <a href="#gallery-modal-1" class="light-modal-navigation navigation-next"></a>
+            </div>
+        </div>
+    </div>
+    <!-- gallery modal content end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="demoDist/scripts.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

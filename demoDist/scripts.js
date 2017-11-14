@@ -3,7 +3,7 @@
 
 
 function testAnim(x) {
-    $('.light-modal-content').removeClass().addClass(x + ' light-modal-content animated');
+    $('.light-modal-content').not('.no').removeClass().addClass(x + ' light-modal-content animated');
 };
 
 $(document).ready(function() {

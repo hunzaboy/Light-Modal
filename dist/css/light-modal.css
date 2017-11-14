@@ -1,5 +1,5 @@
 /*!
-   light-modal v1.0.3: A new lightweight css modal.
+   light-modal v1.1.0: A new lightweight css modal.
    (c) 2017 
    MIT License
    git+https://github.com/hunzaboy/Light-Modal.git
@@ -125,6 +125,48 @@
   display: -ms-flexbox;
   display: flex;
   visibility: visible;
+}
+
+.light-modal-navigation .navigation-next,
+.light-modal-navigation .navigation-prev {
+  width: 32px;
+  height: 32px;
+  border-color: #fff;
+  transition: border-color .2s;
+}
+
+.light-modal-navigation .navigation-next:hover,
+.light-modal-navigation .navigation-prev:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.light-modal-navigation .navigation-next {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+}
+
+.light-modal-navigation .navigation-prev {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+
+@media (max-width: 480px) {
+  .light-modal-navigation .navigation-next {
+    right: 5px;
+  }
+  .light-modal-navigation .navigation-prev {
+    left: 5px;
+  }
 }
 
 @keyframes basic {
