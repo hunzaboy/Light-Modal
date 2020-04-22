@@ -1,4 +1,5 @@
 <h3>Light Modal</h3>
+
 <img src="https://badgen.net/npm/v/light-modal"/><img src="https://badgen.net/npm/dw/light-modal"/>
 
 <a href="https://hunzaboy.github.io/Light-Modal/">View the Awesome Demo</a>
