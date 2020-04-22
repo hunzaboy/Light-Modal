@@ -1,4 +1,10 @@
 .light-modal {
+  --lm-body-bg: #845ec2;
+  --lm-modal-bg: #000000;
+  --lm-close-bg: #ff6f91;
+  --lm-small-modal: 30vw;
+  --lm-large-modal: 50vw;
+  --lm-font-size: 14px;
   display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0);
@@ -10,15 +16,15 @@
   right: 0;
   z-index: 9000;
   transition: background 1s;
-  font-size: 16px;
+  font-size: var(--lm-font-size);
   visibility: hidden;
 }
 
 .light-modal-content {
-  background: #845ec2;
+  background: var(--lm-body-bg);
   color: #fff;
-  width: 30vw;
-  border-radius: .2em;
+  width: var(--lm-small-modal);
+  border-radius: 0.2em;
   position: relative;
   max-height: calc(100vh - 150px);
   line-height: 1.4;
@@ -28,11 +34,11 @@
 
 .light-modal-content img {
   max-width: 100%;
-  border-radius: .2em;
+  border-radius: 0.2em;
 }
 
 .light-modal-content.large-content {
-  width: 50vw;
+  width: var(--lm-large-modal);
 }
 
 .light-modal-header {
@@ -70,15 +76,16 @@
   text-decoration: none;
   color: #fff;
   padding: 5px 10px;
-  border-radius: .2em;
-  background: #FF6F91;
+  border-radius: 0.2em;
+  background: var(--lm-close-bg);
   font-size: 1.5em;
   line-height: 1;
-  transition: background .2s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .light-modal-close-icon:hover, .light-modal-close-btn:hover {
-  background: #ff3c6a;
+  opacity: 0.9;
 }
 
 .light-modal-close-icon {
@@ -88,7 +95,8 @@
 }
 
 .light-modal-close-btn {
-  font-size: 1em;
+  font-size: 1.3em;
+  line-height: 1.4;
 }
 
 .light-modal-caption {
@@ -98,7 +106,7 @@
   top: 100%;
   padding: 10px 0;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: .2em;
+  border-radius: 0.2em;
   width: 100%;
   text-align: center;
   margin-top: 5px;
@@ -115,7 +123,7 @@
   width: 32px;
   height: 32px;
   border-color: #fff;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .light-modal-navigation .navigation-next:hover,
@@ -150,15 +158,6 @@
   }
 }
 
-@-webkit-keyframes basic {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes basic {
   0% {
     opacity: 0;
@@ -169,24 +168,14 @@
 }
 
 .basic {
-  -webkit-animation-name: basic;
-          animation-name: basic;
+  animation-name: basic;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .light-modal {
-    font-size: 14px;
-  }
-  .light-modal:target .light-modal-content {
-    width: 70vw;
+    --lm-small-modal: 70vw;
+    --lm-large-modal: 70vw;
   }
 }
 
-@supports (display: flex) {
-  @media (max-width: 767px) {
-    .light-modal:target .light-modal-content {
-      width: 70vw;
-    }
-  }
-}
 /*# sourceMappingURL=light-modal.css.map */
