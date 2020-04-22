@@ -34,3 +34,6 @@ package-lock.json
 
 # Yarn
 yarn.lock
+
+# Demo Files
+demoSrc
