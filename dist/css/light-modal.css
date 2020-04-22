@@ -158,6 +158,15 @@
   }
 }
 
+@-webkit-keyframes basic {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes basic {
   0% {
     opacity: 0;
@@ -168,7 +177,8 @@
 }
 
 .basic {
-  animation-name: basic;
+  -webkit-animation-name: basic;
+          animation-name: basic;
 }
 
 @media (max-width: 1000px) {
@@ -177,5 +187,4 @@
     --lm-large-modal: 70vw;
   }
 }
-
 /*# sourceMappingURL=light-modal.css.map */
