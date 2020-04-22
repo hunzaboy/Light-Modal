@@ -1,0 +1,37 @@
+{
+  "name": "light-modal",
+  "version": "1.1.0",
+  "description": "A new lightweight css modal.",
+  "main": "dist/css/light-modal.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunzaboy/Light-Modal.git"
+  },
+  "author": "Aslam Shah",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.1",
+    "gulp-header": "^1.8.8",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "rename": "^1.0.3"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/hunzaboy/Light-Modal/issues"
+  },
+  "homepage": "https://github.com/hunzaboy/Light-Modal#readme",
+  "keywords": [
+    "css",
+    "modal"
+  ]
+}
