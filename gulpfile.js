@@ -143,5 +143,5 @@ gulp.task('watch', function() {
 
 // TASKS
 
-gulp.task('default', ['connect', 'css', 'demo-css', 'demo-js','fonts', 'watch']);
-gulp.task('build', ['css', 'demo-css', 'demo-js']);
+gulp.task('default', gulp.series(['connect', 'css', 'demo-css', 'demo-js','fonts', 'watch']));
+gulp.task('build', gulp.series(['css', 'demo-css', 'demo-js']));
