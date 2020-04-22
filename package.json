@@ -26,7 +26,7 @@
     "build-sass": "node-sass --output-style expanded --source-map true src/scss/light-modal.scss dist/css/light-modal.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch",
-    "start-demo": "parcel index.html --open",
+    "start-demo": "parcel index.html -d docs --open",
     "build-demo": "parcel build index.html -d docs --public-url ./"
   },
   "dependencies": {},
