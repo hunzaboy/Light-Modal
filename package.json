@@ -27,7 +27,7 @@
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch",
     "start-demo": "parcel index.html --open",
-    "build-demo": "parcel build index.html -d docs"
+    "build-demo": "parcel build index.html -d docs --public-url ./"
   },
   "dependencies": {},
   "bugs": {
