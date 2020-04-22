@@ -20,6 +20,7 @@
 - [ ] IE9 and/or below
 
 <h3>Changelog</h3>
+v 1.2.0 - Updated package.json, added css variables, removed gulp for building etc
 v 1.1.0 - Added new Gallery Mode
 <hr>
 
